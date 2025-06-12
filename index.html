@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="/img/signup.png" type="image/x-icon">
-
+    
 </head>
 <body>
     <div class="container">
@@ -18,21 +18,25 @@
         <form action="#" method="post" id="form">
                 <div class="username">
                     <label for="username"><i class="fa-solid fa-user"></i></label>
-                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="text" id="username" placeholder="Username">
+                    <span id="uname-error"></span>
                 </div>
                 <div class="email">
                     <label for="email"><i class="fa-solid fa-envelope"></i></label>
-                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="email" id="email" placeholder="Email">
+                    <span id="email-error"></span>
                 </div>
                 <div class="password">
                     <label for="password"><i class="fa-solid fa-lock"></i></label>
-                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="password" placeholder="Password">
+                    <span id="password-error"></span>
                 </div>
                 <div class="confirm-password">
                     <label for="confirm-password"><i class="fa-solid fa-lock"></i></label>
-                    <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                    <span id="confirm-password-error"></span>
                 </div>    
-                <button type="submit" class="btn-signup">Sign Up</button>
+                <button type="submit" class="btn-signup" id="btn-sign">Sign Up</button>
                 <p class="signin-link">Already have an account? <a class="signin-page-link" href="sign-in.html">Sign In</a></p>
                 <p class="or">OR</p>    
                 <div class="social-login">
@@ -42,5 +46,6 @@
                 </div>
             </form>
     </div>
+    <script src="/js/main.js"></script>
 </body>
 </html>
