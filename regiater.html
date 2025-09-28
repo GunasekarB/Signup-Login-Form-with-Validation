@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/css/register.css" />
+    <link rel="shortcut icon" href="./assets/img/user.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h2>Sign Up</h2>
+    <div class="container">
+      <div class="img">
+        <img src="./assets/img/register.jpg" alt="signup image" />
+      </div>
+
+      <form action="index.html" method="post" id="register-form">
+        <div class="full-name ii">
+          <i class="fa-regular fa-user"></i>
+          <input type="text" id="fullname" placeholder="Full Name" />
+          <span id="fullname-error"></span>
+        </div>
+
+        <div class="email">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="email" id="email" placeholder="Email" />
+          <span id="email-error"></span>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="username" placeholder="Username" />
+          <span id="username-error"></span>
+        </div>
+
+        <div class="password">
+          <i class="fa-solid fa-unlock"></i>
+          <input type="password" id="password" placeholder="Password" />
+          <span id="password-error"></span>
+        </div>
+
+        <div class="confirm-password">
+          <i class="fa-solid fa-lock"></i>
+          <input
+            type="password"
+            id="confirm_password"
+            placeholder="Confirm Password"
+          />
+          <span id="confirm-password-error"></span>
+        </div>
+
+        <div class="dob">
+          <i class="fa-solid fa-calendar"></i>
+          <input type="date" id="dob" />
+          <span id="dob-error"></span>
+        </div>
+
+        <div class="gender">
+          <i class="fa-solid fa-person-half-dress"></i>
+          <select id="gender">
+            <option value="">Select</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+          <span id="gender-error"></span>
+        </div>
+        <div class="terms">
+          <label>
+            <input type="checkbox" name="terms" />
+            <p>I agree to the Terms and Conditions</p>
+          </label>
+        </div>
+
+        <div class="submit">
+          <button type="submit" href="index.html">Register</button>
+          <p>
+            Already have an account?
+            <a href="index.html">Login here</a>
+          </p>
+        </div>
+
+      </form>
+    </div>
+    <script type="module" src="./assets/js/register.js"></script>
+  </body>
+</html>
