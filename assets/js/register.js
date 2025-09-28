@@ -126,3 +126,26 @@ if (isValid) {
 }
 
 });
+
+// Hide error span when user types or changes input fields
+document.getElementById("fullname").addEventListener("input", function () {
+  document.getElementById("fullname-error").textContent = "";
+});
+document.getElementById("email").addEventListener("input", function () {
+  document.getElementById("email-error").textContent = "";
+});
+document.getElementById("username").addEventListener("input", function () {
+  document.getElementById("username-error").textContent = "";
+});
+document.getElementById("password").addEventListener("input", function () {
+  document.getElementById("password-error").textContent = "";
+});
+document.getElementById("confirm_password").addEventListener("input", function () {
+  document.getElementById("confirm-password-error").textContent = "";
+});
+document.getElementById("dob").addEventListener("input", function () {
+  document.getElementById("dob-error").textContent = "";
+});
+document.getElementById("gender").addEventListener("change", function () {
+  document.getElementById("gender-error").textContent = "";
+});

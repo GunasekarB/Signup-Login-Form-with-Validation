@@ -28,6 +28,7 @@ signInForm.addEventListener("submit", function (event) {
     passwordError.textContent = "";
   }
 
+
   // get registered user from localStorage (simulate registration)
 
   let registeredUser = JSON.parse(localStorage.getItem("registeredUser"));
@@ -38,10 +39,20 @@ signInForm.addEventListener("submit", function (event) {
       password === registeredUser.password
     ) {
       alert(`Welcome back, ${username}! Sign In Successful.`);
+      //   console.log(registeredUser);
       signInForm.reset();
     } else {
-      emailError.textContent = "*Invalid username ";
-      passwordError.textContent = "*Invalid  password";
+      //   console.log(registeredUser);
+      usernameError.textContent = "*Invalid username ";
+      passwordError.textContent = "*Invalid username or password";
     }
   }
+});
+
+// Hide error span when user types in username or password
+document.getElementById("username-signin").addEventListener("input", function () {
+  document.getElementById("usename-error-signin").textContent = "";
+});
+document.getElementById("password-signin").addEventListener("input", function () {
+  document.getElementById("password-error-signin").textContent = "";
 });
